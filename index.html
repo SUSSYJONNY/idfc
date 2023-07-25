@@ -1,54 +1,48 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Pizzaria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+<style>
+body{
+
+    background-position: center;
+    background-size: cover;
+	text-align: center;
+}
+#myCanvas
+{
+    margin-top: 10px;
+	border-width:40px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h4
+{
+	
+	color:red!important;
+	
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Valores ASCII</title>
 </head>
-
 <body>
-    <div class="topnav">
-        <a class="active" href="#">Pizzaria</a>
-        <div class="topnav-right">
-            <a href="#viewblock">Visualizar Menu</a>
-            <a href="#addTopings">Adicionar Menu</a>
-        </div>
-    </div>
-
-    <div class="row" id="viewblock">
-        <div class="imgDiv">
-            <img class="img-responsive" src="images/pizza.png">
-        </div>
-        <div class="menuDiv">
-            <button id="menuList" onclick="getMenu()">Mostrar Menu</button>
-            <div id="displayMenu"></div>
-        </div>
-    </div>
-
-    <div class="newRow" id="addTopings">
-        <div class="block1">
-            <input id="addItem" placeholder="Digite aqui para adicionar ingredientes">
-            <button class="btn btn-success" onclick="addTop()">adicionar sugestao </button>
-            <button id="addToppings" onclick="addItem()">Mostrar Pizza</button>
-        </div>
-
-        <div class="block2">
-            <div id="displayAddedMenu">
-            </div>
-        </div>
-
-    </div>
-
-    <div>
-        <img class="img-responsive" src="images/topping.png">
-    </div>
 
 
+<h1>Keyboard keys</h1>
+	<canvas id="myCanvas" width="500" height="300">
+	</canvas>
+	<div id="d1"></div>
+<h4>
+	<b class="text-danger">NOTE : </b> PRESSIONE QUALQUER TECLA 
+</h4>
+
+
+<script src="main.js">
+</script>
 </body>
-
 </html>
